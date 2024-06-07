@@ -7,7 +7,7 @@ const github = require('@actions/github')
  */
 async function run() {
   try {
-    // The `who-to-greet` input is defined in action metadata file
+    // The `who-to-greet` input is defined in action metadata file.
     const whoToGreet = core.getInput('who-to-greet', { required: true })
     core.info(`Hello, ${whoToGreet}!`)
 
